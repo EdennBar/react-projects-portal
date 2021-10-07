@@ -70,7 +70,7 @@ const Table = () => {
                 madeDadelineCount+=1;
             }          
         }
-        var deadline = (madeDadelineCount/data.length)
+        var deadline = ((madeDadelineCount/data.length)*100)
         if(deadline < 0.7){
             return <div style={{"backgroundColor":"red"}}>{deadline}%</div>
         }
